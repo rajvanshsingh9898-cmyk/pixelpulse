@@ -97,7 +97,7 @@
 /* Guarantee */
 .guarantee-banner {
   background: var(--accent-dim);
-  border: 1px solid rgba(200,169,110,0.2);
+  border: 1px solid rgba(107,140,255,0.2);
   border-radius: var(--radius-xl);
   padding: 48px;
   text-align: center;
