@@ -1,0 +1,120 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   PRICING.CSS
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.pricing-full-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: var(--space-10);
+}
+@media (max-width: 768px) {
+  .pricing-full-grid { grid-template-columns: 1fr; }
+}
+
+/* Comparison Table */
+.comparison-table-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  margin-top: var(--space-12);
+  overflow-x: auto;
+}
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+.comparison-table th,
+.comparison-table td {
+  padding: 16px 24px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  font-family: 'Satoshi', sans-serif;
+  font-size: 14px;
+}
+.comparison-table th {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  background: var(--surface-2);
+}
+.comparison-table th.growth-col {
+  background: var(--accent-dim);
+  color: var(--accent);
+}
+.comparison-table td {
+  color: var(--text);
+}
+.comparison-table td.feature-name {
+  color: var(--text-muted);
+}
+.comparison-table .check {
+  color: var(--accent);
+}
+.comparison-table .cross {
+  color: var(--text-faint);
+}
+
+/* Add-ons */
+.addons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: var(--space-10);
+}
+@media (max-width: 768px) {
+  .addons-grid { grid-template-columns: repeat(2, 1fr); }
+}
+.addon-card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+.addon-title {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text);
+}
+.addon-price {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: var(--text-lg);
+  color: var(--accent);
+  margin-top: 8px;
+}
+.addon-desc {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* Guarantee */
+.guarantee-banner {
+  background: var(--accent-dim);
+  border: 1px solid rgba(200,169,110,0.2);
+  border-radius: var(--radius-xl);
+  padding: 48px;
+  text-align: center;
+  margin-top: var(--space-12);
+}
+.guarantee-heading {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: var(--text-xl);
+  color: var(--text);
+}
+.guarantee-heading .accent {
+  color: var(--accent);
+  font-style: italic;
+}
+.guarantee-body {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: var(--space-4);
+}
