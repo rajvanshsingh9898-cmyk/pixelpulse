@@ -3,10 +3,9 @@
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
 /* Hero */
-.hero-outer { height: 500vh; }
+.hero-outer { height: auto; }
 .hero-inner {
-  position: sticky;
-  top: 0;
+  position: relative;
   height: 100dvh;
   overflow: hidden;
   background: var(--bg);
@@ -19,6 +18,8 @@
   object-fit: cover;
   z-index: 0;
   opacity: 0.38;
+  will-change: opacity;
+  transform: translateZ(0);
 }
 .hero-overlay {
   position: absolute;
