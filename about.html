@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — PixelPulse</title>
+  <meta name="description" content="We're a small, obsessed team that believes great design is the fastest unfair advantage a startup can have.">
+  <meta property="og:title" content="About — PixelPulse">
+  <meta property="og:description" content="A small, obsessed team building unfair advantages for startups.">
+  <meta property="og:image" content="./assets/og-preview.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PixelPulse">
+  <meta name="twitter:card" content="summary_large_image">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300..700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,400i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/tokens.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages/about.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{instrument:['Instrument Serif','Georgia','serif'],dm:['DM Sans','Helvetica Neue','sans-serif'],satoshi:['Satoshi','Helvetica Neue','sans-serif']}}}}</script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <div class="grain-overlay" aria-hidden="true"><svg width="100%" height="100%"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg></div>
+
+  <div class="announce-bar" role="marquee" aria-label="Announcements"><div class="announce-track"><span class="announce-item"><svg viewBox="0 0 16 16" fill="currentColor" style="color:var(--accent)"><path d="M6 12l-4-4 1.4-1.4L6 9.2l6.6-6.6L14 4z"/></svg>FREE DISCOVERY CALL — NO COMMITMENT</span><span class="announce-dot"></span><span class="announce-item">2-WEEK DESIGN SPRINT · LAUNCH-READY</span><span class="announce-dot"></span><span class="announce-item">USED BY 40+ SEED & SERIES-A STARTUPS</span><span class="announce-dot"></span><span class="announce-item">AI-ACCELERATED · HUMAN-CRAFTED</span><span class="announce-dot"></span><span class="announce-item"><svg viewBox="0 0 16 16" fill="currentColor" style="color:var(--accent)"><path d="M6 12l-4-4 1.4-1.4L6 9.2l6.6-6.6L14 4z"/></svg>FREE DISCOVERY CALL — NO COMMITMENT</span><span class="announce-dot"></span><span class="announce-item">2-WEEK DESIGN SPRINT · LAUNCH-READY</span><span class="announce-dot"></span><span class="announce-item">USED BY 40+ SEED & SERIES-A STARTUPS</span><span class="announce-dot"></span><span class="announce-item">AI-ACCELERATED · HUMAN-CRAFTED</span><span class="announce-dot"></span></div></div>
+
+  <nav class="floating-nav" aria-label="Main navigation"><div class="nav-inner"><a href="index.html" class="nav-brand" aria-label="PixelPulse Home"><span class="nav-logo"><svg width="28" height="28" viewBox="0 0 48 48" fill="none"><path d="M24 4L44 24L24 44L4 24L24 4Z" stroke="var(--accent)" stroke-width="1.5" fill="none"/><text x="24" y="28" text-anchor="middle" fill="var(--accent)" font-family="Satoshi" font-size="14" font-weight="700">P</text></svg></span><span class="nav-wordmark">PixelPulse</span></a><div class="nav-links"><a href="services.html" class="nav-link">Services</a><a href="work.html" class="nav-link">Work</a><a href="process.html" class="nav-link">Process</a><a href="pricing.html" class="nav-link">Pricing</a><a href="about.html" class="nav-link">About</a><a href="blog.html" class="nav-link">Blog</a></div><div class="nav-cta"><a href="contact.html" class="btn-pill btn-accent" style="padding:10px 24px;font-size:11px;">Book a Call</a></div><button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button></div></nav>
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay" aria-hidden="true"><a href="services.html" class="mobile-nav-link">Services</a><a href="work.html" class="mobile-nav-link">Work</a><a href="process.html" class="mobile-nav-link">Process</a><a href="pricing.html" class="mobile-nav-link">Pricing</a><a href="about.html" class="mobile-nav-link">About</a><a href="blog.html" class="mobile-nav-link">Blog</a><div class="mobile-nav-bottom"><a href="contact.html" class="btn-pill btn-accent">Book a Call</a></div></div>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="about-hero" style="background-image:url('./assets/hero-bg.png');">
+      <div class="container" style="position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;min-height:60vh;padding-top:140px;">
+        <p class="eyebrow">About PixelPulse</p>
+        <h1 style="font-family:'Instrument Serif',Georgia,serif;font-size:var(--text-3xl);color:var(--text);max-width:640px;" class="fade-up">Design is the unfair advantage.</h1>
+      </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section class="section-pad" style="background:var(--surface);" aria-label="Manifesto">
+      <div class="container manifesto-section">
+        <p class="eyebrow">Our Manifesto</p>
+        <div class="manifesto-body fade-up">
+          <p>We started PixelPulse because we were tired of watching brilliant startups launch with forgettable websites. Founders spending months on their product, then settling for a template that looks like every other startup on Product Hunt.</p>
+          <p>We believe design is the fastest unfair advantage a startup can have. Not just "looking good" — but converting visitors into customers, communicating trust before a single word is read, and making the complex feel simple.</p>
+          <p>We're not a big agency. We're a small, obsessed team. We use AI to move at 3× speed — but every pixel is placed by a human who gives a damn. Every animation has a purpose. Every page has a job.</p>
+        </div>
+        <blockquote class="manifesto-quote fade-up">
+          <p>"We don't design websites. We design unfair advantages."</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section-pad" style="background:var(--bg);" aria-label="Team">
+      <div class="container">
+        <p class="eyebrow" style="text-align:center;">The Team</p>
+        <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:var(--text-2xl);color:var(--text);text-align:center;margin-bottom:var(--space-10);">Small team, big craft</h2>
+        <div class="team-grid fade-up-stagger">
+          <div class="team-member">
+            <div class="team-photo"><img src="./assets/agency-identity.png" alt="Arjun Mehta, Founder" width="400" height="480" loading="lazy" decoding="async"></div>
+            <h3 class="team-name">Arjun Mehta</h3>
+            <p class="team-role">Founder & Design Lead</p>
+            <p class="team-bio">8 years in product design. Ex-Razorpay. Obsessed with conversion.</p>
+          </div>
+          <div class="team-member">
+            <div class="team-photo"><img src="./assets/social-proof.png" alt="Priya Sharma, Creative Director" width="400" height="480" loading="lazy" decoding="async"></div>
+            <h3 class="team-name">Priya Sharma</h3>
+            <p class="team-role">Creative Director</p>
+            <p class="team-bio">Brand strategist. Makes startups look like they've been around for 10 years.</p>
+          </div>
+          <div class="team-member">
+            <div class="team-photo"><img src="./assets/feature-card.png" alt="Ravi Kumar, Lead Developer" width="400" height="480" loading="lazy" decoding="async"></div>
+            <h3 class="team-name">Ravi Kumar</h3>
+            <p class="team-role">Lead Developer</p>
+            <p class="team-bio">Full-stack wizard. Turns Figma dreams into 100-Lighthouse-score reality.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="section-pad" style="background:var(--surface);" aria-label="Values">
+      <div class="container">
+        <p class="eyebrow" style="text-align:center;">What We Believe</p>
+        <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:var(--text-2xl);color:var(--text);text-align:center;margin-bottom:var(--space-10);">Four principles</h2>
+        <div class="values-grid fade-up-stagger">
+          <div class="value-card">
+            <div class="value-icon">✦</div>
+            <h3 class="value-title">Craft</h3>
+            <p class="value-desc">Every pixel matters. We sweat the details because your customers notice — even subconsciously.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">⚡</div>
+            <h3 class="value-title">Speed</h3>
+            <p class="value-desc">14 days, not 14 weeks. AI acceleration meets human precision for deadlines that actually hold.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">◈</div>
+            <h3 class="value-title">Honesty</h3>
+            <p class="value-desc">Flat pricing, no scope creep, no surprise invoices. We tell you what works and what doesn't.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">▲</div>
+            <h3 class="value-title">Impact</h3>
+            <p class="value-desc">Beautiful is baseline. We measure success in conversion lifts, signups, and revenue — not awards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer"><div class="container"><div class="footer-editorial"><p class="eyebrow">We Design What Converts — Est. 2024</p><h2 class="footer-headline">BUILT FOR<br>FOUNDERS<br>WHO SHIP.</h2></div><div class="footer-nav-grid"><div class="footer-nav-col"><h4>Pages</h4><a href="services.html">Services</a><a href="work.html">Work</a><a href="process.html">Process</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a href="blog.html">Blog</a></div><div class="footer-nav-col"><h4>Services</h4><a href="services.html">Brand Sprint</a><a href="services.html">Redesign</a><a href="services.html">Design Systems</a><a href="services.html">Framer Sites</a><a href="services.html">SEO</a></div><div class="footer-nav-col"><h4>Company</h4><a href="about.html">About Us</a><a href="#">Careers</a><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Sitemap</a></div><div class="footer-nav-col"><h4>Connect</h4><a href="mailto:hello@pixelpulse.co">hello@pixelpulse.co</a><div style="display:flex;gap:8px;margin-top:8px;"><a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg></a><a href="#" class="social-icon" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l6.5 8L4 20h2l5.5-6.5L16 20h4l-7-8.5L19.5 4H18l-5 5.5L9 4z"/></svg></a><a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div></div></div><div class="footer-bottom"><svg class="footer-bottom-logo" width="20" height="20" viewBox="0 0 48 48" fill="none"><path d="M24 4L44 24L24 44L4 24L24 4Z" stroke="var(--text-faint)" stroke-width="1.5" fill="none"/></svg><span>© 2026 PixelPulse · Jammu, India</span><span>Made with AI · Shipped with care</span></div></div></footer>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/gsap-init.js" defer></script>
+</body>
+</html>
