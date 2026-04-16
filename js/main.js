@@ -21,9 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── LAZY LOAD HERO VIDEO ── */
   const heroVideo = document.querySelector('.hero-video');
-  if (heroVideo && heroVideo.preload === 'none') {
-    heroVideo.preload = 'auto';
-    heroVideo.load();
+  if (heroVideo) {
+    heroVideo.play().catch(() => {});
   }
 
   /* ── FLOATING NAV ── */
