@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Your Startup's Website Is Losing You Customers — PixelPulse Blog</title>
+  <meta name="description" content="Most startup websites are built for founders, not customers. Here's the framework we use to redesign sites that actually convert.">
+  <meta property="og:title" content="Why Your Startup's Website Is Losing You Customers">
+  <meta property="og:description" content="The framework we use to redesign sites that actually convert.">
+  <meta property="og:image" content="./assets/hero-bg.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PixelPulse">
+  <meta name="twitter:card" content="summary_large_image">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300..700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,400i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/tokens.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages/blog.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{instrument:['Instrument Serif','Georgia','serif'],dm:['DM Sans','Helvetica Neue','sans-serif'],satoshi:['Satoshi','Helvetica Neue','sans-serif']}}}}</script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <div class="grain-overlay" aria-hidden="true"><svg width="100%" height="100%"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg></div>
+
+  <div class="announce-bar" role="marquee" aria-label="Announcements"><div class="announce-track"><span class="announce-item"><svg viewBox="0 0 16 16" fill="currentColor" style="color:var(--accent)"><path d="M6 12l-4-4 1.4-1.4L6 9.2l6.6-6.6L14 4z"/></svg>FREE DISCOVERY CALL — NO COMMITMENT</span><span class="announce-dot"></span><span class="announce-item">2-WEEK DESIGN SPRINT · LAUNCH-READY</span><span class="announce-dot"></span><span class="announce-item">USED BY 40+ SEED & SERIES-A STARTUPS</span><span class="announce-dot"></span><span class="announce-item">AI-ACCELERATED · HUMAN-CRAFTED</span><span class="announce-dot"></span><span class="announce-item"><svg viewBox="0 0 16 16" fill="currentColor" style="color:var(--accent)"><path d="M6 12l-4-4 1.4-1.4L6 9.2l6.6-6.6L14 4z"/></svg>FREE DISCOVERY CALL — NO COMMITMENT</span><span class="announce-dot"></span><span class="announce-item">2-WEEK DESIGN SPRINT · LAUNCH-READY</span><span class="announce-dot"></span><span class="announce-item">USED BY 40+ SEED & SERIES-A STARTUPS</span><span class="announce-dot"></span><span class="announce-item">AI-ACCELERATED · HUMAN-CRAFTED</span><span class="announce-dot"></span></div></div>
+
+  <nav class="floating-nav" aria-label="Main navigation"><div class="nav-inner"><a href="index.html" class="nav-brand" aria-label="PixelPulse Home"><span class="nav-logo"><svg width="28" height="28" viewBox="0 0 48 48" fill="none"><path d="M24 4L44 24L24 44L4 24L24 4Z" stroke="var(--accent)" stroke-width="1.5" fill="none"/><text x="24" y="28" text-anchor="middle" fill="var(--accent)" font-family="Satoshi" font-size="14" font-weight="700">P</text></svg></span><span class="nav-wordmark">PixelPulse</span></a><div class="nav-links"><a href="services.html" class="nav-link">Services</a><a href="work.html" class="nav-link">Work</a><a href="process.html" class="nav-link">Process</a><a href="pricing.html" class="nav-link">Pricing</a><a href="about.html" class="nav-link">About</a><a href="blog.html" class="nav-link">Blog</a></div><div class="nav-cta"><a href="contact.html" class="btn-pill btn-accent" style="padding:10px 24px;font-size:11px;">Book a Call</a></div><button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button></div></nav>
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay" aria-hidden="true"><a href="services.html" class="mobile-nav-link">Services</a><a href="work.html" class="mobile-nav-link">Work</a><a href="process.html" class="mobile-nav-link">Process</a><a href="pricing.html" class="mobile-nav-link">Pricing</a><a href="about.html" class="mobile-nav-link">About</a><a href="blog.html" class="mobile-nav-link">Blog</a><div class="mobile-nav-bottom"><a href="contact.html" class="btn-pill btn-accent">Book a Call</a></div></div>
+
+  <main id="main-content">
+
+    <!-- POST HERO -->
+    <section class="container" style="padding-top:140px;padding-bottom:var(--space-8);">
+      <a href="blog.html" style="font-family:'Satoshi',sans-serif;font-size:13px;color:var(--text-muted);text-decoration:none;display:inline-flex;align-items:center;gap:4px;">← Back to Blog</a>
+      <span class="blog-category" style="display:inline-block;margin-top:var(--space-6);">Design</span>
+      <h1 style="font-family:'Instrument Serif',Georgia,serif;font-size:var(--text-2xl);color:var(--text);margin-top:var(--space-4);max-width:720px;" class="fade-up">Why your startup's website is losing you customers (and how to fix it in 14 days)</h1>
+      <div class="blog-meta" style="margin-top:var(--space-4);"><span>Arjun Mehta</span><span>·</span><span>Jan 15, 2026</span><span>·</span><span>8 min read</span></div>
+      <img src="./assets/hero-bg.png" alt="Article hero" width="1200" height="520" loading="eager" decoding="async" style="width:100%;border-radius:var(--radius-md);margin-top:var(--space-8);aspect-ratio:1200/520;object-fit:cover;">
+    </section>
+
+    <!-- POST CONTENT -->
+    <section class="section-pad" style="background:var(--surface);">
+      <div class="container">
+        <div class="post-layout">
+
+          <!-- SIDEBAR TOC -->
+          <aside class="post-sidebar">
+            <nav class="toc" aria-label="Table of contents">
+              <p class="toc-title">Contents</p>
+              <a href="#the-problem" class="toc-link">The Problem</a>
+              <a href="#why-it-happens" class="toc-link">Why It Happens</a>
+              <a href="#the-framework" class="toc-link">The Framework</a>
+              <a href="#hero-section" class="toc-link">Fix Your Hero</a>
+              <a href="#social-proof" class="toc-link">Social Proof</a>
+              <a href="#speed" class="toc-link">Speed Matters</a>
+              <a href="#conclusion" class="toc-link">Conclusion</a>
+            </nav>
+          </aside>
+
+          <!-- ARTICLE BODY -->
+          <article class="post-body">
+            <h2 id="the-problem">The Problem</h2>
+            <p>You've spent months building your product. The tech is solid, the team is sharp, and you've got early traction. But your website? It's a template you grabbed at 2 AM before your launch, and it shows.</p>
+            <p>Here's the uncomfortable truth: <strong>your website is your first employee</strong>. It works 24/7, talks to every potential customer, and makes a first impression in under 3 seconds. If it's not converting, you're burning money on every ad dollar, every social post, every referral.</p>
+
+            <h2 id="why-it-happens">Why It Happens</h2>
+            <p>Most startup founders fall into the same trap. They build websites for themselves, not their customers. The homepage leads with "We're an AI-powered platform for…" instead of "Stop losing 40% of your leads to a broken funnel."</p>
+            <p>Common mistakes we see:</p>
+            <ul>
+              <li>Hero section that describes the product instead of the customer's pain</li>
+              <li>No social proof above the fold</li>
+              <li>6+ navigation items causing decision paralysis</li>
+              <li>Mobile experience as an afterthought</li>
+              <li>Page load time over 3 seconds</li>
+            </ul>
+
+            <h2 id="the-framework">The Framework</h2>
+            <p>After redesigning 40+ startup websites, we've distilled our approach into a repeatable framework. We call it the <strong>CHPS Framework</strong>: Clarity, Hierarchy, Proof, Speed.</p>
+            <blockquote>
+              <p>"A visitor should understand what you do, who it's for, and why they should care — in 5 seconds or less."</p>
+            </blockquote>
+            <p>Let's break down each component.</p>
+
+            <h2 id="hero-section">Fix Your Hero</h2>
+            <p>Your hero section has one job: get visitors to scroll. That's it. Everything above the fold should answer three questions:</p>
+            <ol>
+              <li><strong>What do you do?</strong> (One sentence, benefit-focused)</li>
+              <li><strong>Who is it for?</strong> (Be specific — "seed-stage SaaS founders")</li>
+              <li><strong>What should I do next?</strong> (One clear CTA)</li>
+            </ol>
+            <p>Kill the jargon. Kill the feature list. Lead with the outcome your customer wants.</p>
+
+            <h3>A real example</h3>
+            <p>Before: <em>"AI-powered analytics platform with real-time dashboards and machine learning insights"</em></p>
+            <p>After: <em>"See which features your users actually love — in 30 seconds, not 30 minutes"</em></p>
+            <p>The second version increased demo signups by 180%.</p>
+
+            <h2 id="social-proof">Social Proof That Actually Works</h2>
+            <p>Logos are good. Testimonials are better. But the most powerful social proof is <strong>specific results</strong>.</p>
+            <p>Instead of "Trusted by 100+ companies," try "+312% signup increase for Novara after our redesign." Numbers are specific. Numbers are believable. Numbers convert.</p>
+            <pre><code>// Don't do this
+"Trusted by leading companies"
+
+// Do this  
+"+312% signups · Novara"
+"-40% bounce rate · Arcform"
+"+180% demos · Stackr"</code></pre>
+
+            <h2 id="speed">Speed Matters More Than You Think</h2>
+            <p>Every 100ms of load time costs you 1% in conversions. That's not a theory — it's measured across thousands of e-commerce and SaaS sites.</p>
+            <p>Our targets for every site we build:</p>
+            <ul>
+              <li>Lighthouse Performance: 90+</li>
+              <li>First Contentful Paint: &lt; 1.2s</li>
+              <li>Cumulative Layout Shift: &lt; 0.1</li>
+              <li>Total page weight: &lt; 1MB</li>
+            </ul>
+            <p>We achieve this through static site generation, optimized images (WebP/AVIF), edge caching, and zero render-blocking JS.</p>
+
+            <h2 id="conclusion">Conclusion</h2>
+            <p>Your startup website doesn't need to be expensive. It doesn't need to take months. But it does need to be intentional — every word, every layout decision, every animation should serve your conversion goal.</p>
+            <p>The CHPS Framework gives you a lens to audit your current site or brief a designer for a rebuild. If you want to see it in action, check out our <a href="work.html">case studies</a> or <a href="contact.html">book a free discovery call</a>.</p>
+            <p><em>Your website is your first employee. Make sure it's your best one.</em></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUTHOR BIO -->
+    <section class="section-pad" style="background:var(--bg);" aria-label="Author">
+      <div class="container" style="max-width:720px;">
+        <div class="author-bio fade-up" style="display:flex;gap:var(--space-6);align-items:center;">
+          <img src="./assets/agency-identity.png" alt="Arjun Mehta" width="80" height="80" style="border-radius:50%;flex-shrink:0;" loading="lazy" decoding="async">
+          <div>
+            <p style="font-family:'Satoshi',sans-serif;font-weight:700;font-size:15px;color:var(--text);">Arjun Mehta</p>
+            <p style="font-family:'Satoshi',sans-serif;font-size:13px;color:var(--text-muted);margin-top:2px;">Founder & Design Lead at PixelPulse</p>
+            <p style="font-family:'Satoshi',sans-serif;font-size:14px;color:var(--text-muted);margin-top:8px;line-height:1.6;">8 years in product design. Ex-Razorpay. Writes about startup design, conversion optimization, and the future of AI-powered web development.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED POSTS -->
+    <section class="section-pad" style="background:var(--surface);" aria-label="Related posts">
+      <div class="container">
+        <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:var(--text-xl);color:var(--text);margin-bottom:var(--space-8);">Related posts</h2>
+        <div class="blog-grid" style="grid-template-columns:repeat(3,1fr);">
+          <article class="blog-card">
+            <div class="blog-card-image"><img src="./assets/feature-card.png" alt="Blog post" width="600" height="360" loading="lazy" decoding="async"></div>
+            <div class="blog-card-body">
+              <span class="blog-category">Conversion</span>
+              <h3 class="blog-card-title"><a href="blog-post.html">The 5 conversion killers we see on every startup homepage</a></h3>
+              <div class="blog-meta"><span>Jan 10, 2026</span><span>·</span><span>6 min</span></div>
+            </div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-card-image"><img src="./assets/social-proof.png" alt="Blog post" width="600" height="360" loading="lazy" decoding="async"></div>
+            <div class="blog-card-body">
+              <span class="blog-category">AI</span>
+              <h3 class="blog-card-title"><a href="blog-post.html">How we use AI to design 3× faster (without sacrificing quality)</a></h3>
+              <div class="blog-meta"><span>Jan 5, 2026</span><span>·</span><span>7 min</span></div>
+            </div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-card-image"><img src="./assets/process-section.png" alt="Blog post" width="600" height="360" loading="lazy" decoding="async"></div>
+            <div class="blog-card-body">
+              <span class="blog-category">Startup</span>
+              <h3 class="blog-card-title"><a href="blog-post.html">Before your Series A: the website checklist investors actually notice</a></h3>
+              <div class="blog-meta"><span>Dec 28, 2025</span><span>·</span><span>5 min</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer"><div class="container"><div class="footer-editorial"><p class="eyebrow">We Design What Converts — Est. 2024</p><h2 class="footer-headline">BUILT FOR<br>FOUNDERS<br>WHO SHIP.</h2></div><div class="footer-nav-grid"><div class="footer-nav-col"><h4>Pages</h4><a href="services.html">Services</a><a href="work.html">Work</a><a href="process.html">Process</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a href="blog.html">Blog</a></div><div class="footer-nav-col"><h4>Services</h4><a href="services.html">Brand Sprint</a><a href="services.html">Redesign</a><a href="services.html">Design Systems</a><a href="services.html">Framer Sites</a><a href="services.html">SEO</a></div><div class="footer-nav-col"><h4>Company</h4><a href="about.html">About Us</a><a href="#">Careers</a><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Sitemap</a></div><div class="footer-nav-col"><h4>Connect</h4><a href="mailto:hello@pixelpulse.co">hello@pixelpulse.co</a><div style="display:flex;gap:8px;margin-top:8px;"><a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg></a><a href="#" class="social-icon" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l6.5 8L4 20h2l5.5-6.5L16 20h4l-7-8.5L19.5 4H18l-5 5.5L9 4z"/></svg></a><a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div></div></div><div class="footer-bottom"><svg class="footer-bottom-logo" width="20" height="20" viewBox="0 0 48 48" fill="none"><path d="M24 4L44 24L24 44L4 24L24 4Z" stroke="var(--text-faint)" stroke-width="1.5" fill="none"/></svg><span>© 2026 PixelPulse · Jammu, India</span><span>Made with AI · Shipped with care</span></div></div></footer>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/gsap-init.js" defer></script>
+</body>
+</html>
