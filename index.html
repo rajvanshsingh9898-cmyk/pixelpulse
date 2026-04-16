@@ -15,8 +15,7 @@
   <meta name="twitter:title" content="PixelPulse — We Design Startup Websites That Convert">
   <meta name="twitter:description" content="AI-accelerated web design agency for startups.">
 
-  <link rel="preload" as="image" href="./assets/hero-bg.png">
-  <link rel="preload" as="image" href="./assets/agency-identity.png">
+
 
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300..700&display=swap" rel="stylesheet">
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,400i&display=swap" rel="stylesheet">
@@ -43,10 +42,7 @@
 
   <a href="#main-content" class="skip-link">Skip to content</a>
 
-  <!-- GRAIN OVERLAY -->
-  <div class="grain-overlay" aria-hidden="true">
-    <svg width="100%" height="100%"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg>
-  </div>
+
 
   <!-- PRELOADER -->
   <div id="preloader" class="preloader">
@@ -120,12 +116,12 @@
   </div>
 
   <!-- MAIN CONTENT -->
-  <div id="main-content" style="opacity:0;transition:opacity 600ms;">
+  <div id="main-content" style="opacity:0;transition:opacity 400ms;">
 
     <!-- ═══ SECTION 1: HERO ═══ -->
     <section class="hero-outer" aria-label="Hero">
       <div class="hero-inner">
-        <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline preload="none" aria-hidden="true">
           <source src="./assets/flow-1.mp4" type="video/mp4">
         </video>
         <div class="hero-overlay" aria-hidden="true"></div>
