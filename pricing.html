@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing — PixelPulse</title>
+  <meta name="description" content="Transparent pricing for startup web design. Three tiers, no hidden fees. 100% money-back guarantee.">
+  <meta property="og:title" content="Pricing — PixelPulse">
+  <meta property="og:description" content="Transparent pricing for startup web design. Three tiers, no hidden fees.">
+  <meta property="og:image" content="./assets/og-preview.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PixelPulse">
+  <meta name="twitter:card" content="summary_large_image">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300..700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,400i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/tokens.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages/pricing.css">
+  <link rel="stylesheet" href="./css/pages/home.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{instrument:['Instrument Serif','Georgia','serif'],dm:['DM Sans','Helvetica Neue','sans-serif'],satoshi:['Satoshi','Helvetica Neue','sans-serif']}}}}</script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <div class="grain-overlay" aria-hidden="true"><svg width="100%" height="100%"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg></div>
+
+  <div class="announce-bar" role="marquee" aria-label="Announcements"><div class="announce-track"><span class="announce-item"><svg viewBox="0 0 16 16" fill="currentColor" style="color:var(--accent)"><path d="M6 12l-4-4 1.4-1.4L6 9.2l6.6-6.6L14 4z"/></svg>FREE DISCOVERY CALL — NO COMMITMENT</span><span class="announce-dot"></span><span class="announce-item">2-WEEK DESIGN SPRINT · LAUNCH-READY</span><span class="announce-dot"></span><span class="announce-item">USED BY 40+ SEED & SERIES-A STARTUPS</span><span class="announce-dot"></span><span class="announce-item">AI-ACCELERATED · HUMAN-CRAFTED</span><span class="announce-dot"></span><span class="announce-item"><svg viewBox="0 0 16 16" fill="currentColor" style="color:var(--accent)"><path d="M6 12l-4-4 1.4-1.4L6 9.2l6.6-6.6L14 4z"/></svg>FREE DISCOVERY CALL — NO COMMITMENT</span><span class="announce-dot"></span><span class="announce-item">2-WEEK DESIGN SPRINT · LAUNCH-READY</span><span class="announce-dot"></span><span class="announce-item">USED BY 40+ SEED & SERIES-A STARTUPS</span><span class="announce-dot"></span><span class="announce-item">AI-ACCELERATED · HUMAN-CRAFTED</span><span class="announce-dot"></span></div></div>
+
+  <nav class="floating-nav" aria-label="Main navigation"><div class="nav-inner"><a href="index.html" class="nav-brand" aria-label="PixelPulse Home"><span class="nav-logo"><svg width="28" height="28" viewBox="0 0 48 48" fill="none"><path d="M24 4L44 24L24 44L4 24L24 4Z" stroke="var(--accent)" stroke-width="1.5" fill="none"/><text x="24" y="28" text-anchor="middle" fill="var(--accent)" font-family="Satoshi" font-size="14" font-weight="700">P</text></svg></span><span class="nav-wordmark">PixelPulse</span></a><div class="nav-links"><a href="services.html" class="nav-link">Services</a><a href="work.html" class="nav-link">Work</a><a href="process.html" class="nav-link">Process</a><a href="pricing.html" class="nav-link">Pricing</a><a href="about.html" class="nav-link">About</a><a href="blog.html" class="nav-link">Blog</a></div><div class="nav-cta"><a href="contact.html" class="btn-pill btn-accent" style="padding:10px 24px;font-size:11px;">Book a Call</a></div><button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button></div></nav>
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay" aria-hidden="true"><a href="services.html" class="mobile-nav-link">Services</a><a href="work.html" class="mobile-nav-link">Work</a><a href="process.html" class="mobile-nav-link">Process</a><a href="pricing.html" class="mobile-nav-link">Pricing</a><a href="about.html" class="mobile-nav-link">About</a><a href="blog.html" class="mobile-nav-link">Blog</a><div class="mobile-nav-bottom"><a href="contact.html" class="btn-pill btn-accent">Book a Call</a></div></div>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="section-pad container" style="min-height:50vh;display:flex;flex-direction:column;justify-content:center;padding-top:140px;">
+      <p class="eyebrow">Pricing</p>
+      <h1 style="font-family:'Instrument Serif',Georgia,serif;font-size:var(--text-3xl);color:var(--text);" class="fade-up">No hidden fees.<br>No hourly billing.</h1>
+      <p style="font-family:'Satoshi',sans-serif;font-size:18px;color:var(--text-muted);max-width:50ch;margin-top:var(--space-4);" class="fade-up">Flat-rate pricing. You know what you pay before we start. Every plan includes a 100% money-back guarantee.</p>
+    </section>
+
+    <!-- PRICING CARDS -->
+    <section class="section-pad" style="background:var(--surface);" aria-label="Pricing tiers">
+      <div class="container">
+        <div class="pricing-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6);">
+
+          <!-- STARTER -->
+          <div class="pricing-card fade-up" style="background:var(--bg);border-radius:var(--radius-lg);padding:var(--space-8);border:1px solid var(--border);">
+            <p class="eyebrow" style="text-align:left;">Starter</p>
+            <p style="font-family:'Instrument Serif',Georgia,serif;font-size:var(--text-2xl);color:var(--text);margin-top:var(--space-2);">₹1,50,000</p>
+            <p style="font-family:'Satoshi',sans-serif;font-size:13px;color:var(--text-muted);margin-top:4px;">one-time · ≈ $1,800 USD</p>
+            <p style="font-family:'Satoshi',sans-serif;font-size:14px;color:var(--text-muted);margin-top:var(--space-4);line-height:1.7;">Perfect for MVPs and seed-stage startups that need a launch-ready site fast.</p>
+            <ul style="margin-top:var(--space-6);list-style:none;padding:0;display:flex;flex-direction:column;gap:12px;">
+              <li class="price-feature">✓ 5-page custom website</li>
+              <li class="price-feature">✓ Brand identity (logo + colors)</li>
+              <li class="price-feature">✓ Mobile responsive</li>
+              <li class="price-feature">✓ Basic SEO setup</li>
+              <li class="price-feature">✓ 2 revision rounds</li>
+              <li class="price-feature">✓ Figma source files</li>
+              <li class="price-feature">✓ 14-day delivery</li>
+              <li class="price-feature">✓ 30-day post-launch support</li>
+            </ul>
+            <a href="contact.html" class="btn-pill btn-ghost" style="width:100%;text-align:center;margin-top:var(--space-8);">Get started →</a>
+          </div>
+
+          <!-- GROWTH -->
+          <div class="pricing-card pricing-featured fade-up" style="background:var(--bg);border-radius:var(--radius-lg);padding:var(--space-8);border:2px solid var(--accent);position:relative;">
+            <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--accent);color:var(--bg);font-family:'Satoshi',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:4px 16px;border-radius:100px;">Most Popular</div>
+            <p class="eyebrow" style="text-align:left;">Growth</p>
+            <p style="font-family:'Instrument Serif',Georgia,serif;font-size:var(--text-2xl);color:var(--text);margin-top:var(--space-2);">₹2,75,000</p>
+            <p style="font-family:'Satoshi',sans-serif;font-size:13px;color:var(--text-muted);margin-top:4px;">one-time · ≈ $3,300 USD</p>
+            <p style="font-family:'Satoshi',sans-serif;font-size:14px;color:var(--text-muted);margin-top:var(--space-4);line-height:1.7;">For startups ready to convert. Full brand + web + analytics.</p>
+            <ul style="margin-top:var(--space-6);list-style:none;padding:0;display:flex;flex-direction:column;gap:12px;">
+              <li class="price-feature">✓ 8-page custom website</li>
+              <li class="price-feature">✓ Full brand sprint</li>
+              <li class="price-feature">✓ CMS integration</li>
+              <li class="price-feature">✓ Advanced SEO + analytics</li>
+              <li class="price-feature">✓ Custom animations</li>
+              <li class="price-feature">✓ 3 revision rounds</li>
+              <li class="price-feature">✓ Interactive prototype</li>
+              <li class="price-feature">✓ A/B testing setup</li>
+              <li class="price-feature">✓ 14-day delivery</li>
+              <li class="price-feature">✓ 30-day post-launch support</li>
+            </ul>
+            <a href="contact.html" class="btn-pill btn-accent" style="width:100%;text-align:center;margin-top:var(--space-8);">Get started →</a>
+          </div>
+
+          <!-- SCALE -->
+          <div class="pricing-card fade-up" style="background:var(--bg);border-radius:var(--radius-lg);padding:var(--space-8);border:1px solid var(--border);">
+            <p class="eyebrow" style="text-align:left;">Scale</p>
+            <p style="font-family:'Instrument Serif',Georgia,serif;font-size:var(--text-2xl);color:var(--text);margin-top:var(--space-2);">₹5,00,000</p>
+            <p style="font-family:'Satoshi',sans-serif;font-size:13px;color:var(--text-muted);margin-top:4px;">one-time · ≈ $6,000 USD</p>
+            <p style="font-family:'Satoshi',sans-serif;font-size:14px;color:var(--text-muted);margin-top:var(--space-4);line-height:1.7;">For Series A+ startups. Full design system, multi-product website, priority support.</p>
+            <ul style="margin-top:var(--space-6);list-style:none;padding:0;display:flex;flex-direction:column;gap:12px;">
+              <li class="price-feature">✓ 10+ page custom website</li>
+              <li class="price-feature">✓ Full design system</li>
+              <li class="price-feature">✓ Multi-product architecture</li>
+              <li class="price-feature">✓ CMS + blog integration</li>
+              <li class="price-feature">✓ Advanced animations + interactions</li>
+              <li class="price-feature">✓ Unlimited revision rounds</li>
+              <li class="price-feature">✓ Priority Slack channel</li>
+              <li class="price-feature">✓ Dedicated project manager</li>
+              <li class="price-feature">✓ 14-day delivery</li>
+              <li class="price-feature">✓ 60-day post-launch support</li>
+            </ul>
+            <a href="contact.html" class="btn-pill btn-ghost" style="width:100%;text-align:center;margin-top:var(--space-8);">Get started →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section class="section-pad" style="background:var(--bg);" aria-label="Feature comparison">
+      <div class="container">
+        <p class="eyebrow" style="text-align:center;">Compare Plans</p>
+        <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:var(--text-2xl);color:var(--text);text-align:center;margin-bottom:var(--space-10);">Feature-by-feature</h2>
+        <div class="comparison-table-wrap fade-up">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Starter</th>
+                <th class="highlight-col">Growth</th>
+                <th>Scale</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Pages</td><td>5</td><td class="highlight-col">8</td><td>10+</td></tr>
+              <tr><td>Brand Identity</td><td>Basic</td><td class="highlight-col">Full Sprint</td><td>Full Sprint</td></tr>
+              <tr><td>Custom Design</td><td>✓</td><td class="highlight-col">✓</td><td>✓</td></tr>
+              <tr><td>Mobile Responsive</td><td>✓</td><td class="highlight-col">✓</td><td>✓</td></tr>
+              <tr><td>CMS Integration</td><td>—</td><td class="highlight-col">✓</td><td>✓</td></tr>
+              <tr><td>SEO Setup</td><td>Basic</td><td class="highlight-col">Advanced</td><td>Advanced</td></tr>
+              <tr><td>Analytics</td><td>—</td><td class="highlight-col">✓</td><td>✓</td></tr>
+              <tr><td>Custom Animations</td><td>—</td><td class="highlight-col">✓</td><td>Advanced</td></tr>
+              <tr><td>A/B Testing</td><td>—</td><td class="highlight-col">✓</td><td>✓</td></tr>
+              <tr><td>Design System</td><td>—</td><td class="highlight-col">—</td><td>✓</td></tr>
+              <tr><td>Revision Rounds</td><td>2</td><td class="highlight-col">3</td><td>Unlimited</td></tr>
+              <tr><td>Interactive Prototype</td><td>—</td><td class="highlight-col">✓</td><td>✓</td></tr>
+              <tr><td>Figma Source Files</td><td>✓</td><td class="highlight-col">✓</td><td>✓</td></tr>
+              <tr><td>Dedicated PM</td><td>—</td><td class="highlight-col">—</td><td>✓</td></tr>
+              <tr><td>Post-Launch Support</td><td>30 days</td><td class="highlight-col">30 days</td><td>60 days</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADD-ONS -->
+    <section class="section-pad" style="background:var(--surface);" aria-label="Add-ons">
+      <div class="container">
+        <p class="eyebrow" style="text-align:center;">Add-ons</p>
+        <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:var(--text-2xl);color:var(--text);text-align:center;margin-bottom:var(--space-10);">Need more? Stack these on.</h2>
+        <div class="addons-grid fade-up-stagger">
+          <div class="addon-card">
+            <p class="addon-title">Extra Pages</p>
+            <p class="addon-price">₹15,000 /page</p>
+            <p class="addon-desc">Additional pages beyond your plan's limit.</p>
+          </div>
+          <div class="addon-card">
+            <p class="addon-title">Blog Setup</p>
+            <p class="addon-price">₹30,000</p>
+            <p class="addon-desc">CMS-powered blog with categories, tags, and RSS.</p>
+          </div>
+          <div class="addon-card">
+            <p class="addon-title">Monthly Retainer</p>
+            <p class="addon-price">₹50,000 /mo</p>
+            <p class="addon-desc">Ongoing updates, content changes, and optimization.</p>
+          </div>
+          <div class="addon-card">
+            <p class="addon-title">Pitch Deck Design</p>
+            <p class="addon-price">₹75,000</p>
+            <p class="addon-desc">Investor-ready deck in your brand's visual language.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUARANTEE -->
+    <section class="section-pad" style="background:var(--bg);" aria-label="Guarantee">
+      <div class="container">
+        <div class="guarantee-banner fade-up">
+          <div style="font-size:48px;">🛡️</div>
+          <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:var(--text-xl);color:var(--text);margin-top:var(--space-4);">100% Money-Back Guarantee</h2>
+          <p style="font-family:'Satoshi',sans-serif;font-size:16px;color:var(--text-muted);max-width:52ch;margin-top:var(--space-4);line-height:1.7;text-align:center;">If you're not happy with the wireframes after Phase 1 (Day 3), we'll refund 100% of your payment. No questions asked. We take the risk so you don't have to.</p>
+          <a href="contact.html" class="btn-pill btn-accent" style="margin-top:var(--space-6);">Start risk-free →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-pad" style="background:var(--surface);" aria-label="FAQ">
+      <div class="container">
+        <div class="faq-section">
+          <p class="eyebrow" style="text-align:center;">FAQ</p>
+          <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:var(--text-2xl);color:var(--text);text-align:center;margin-bottom:var(--space-10);">Common pricing questions</h2>
+          <details class="faq-item"><summary>What's included in the price?<svg class="faq-chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg></summary><div class="faq-body"><p>Everything. Design, development, copywriting support, SEO, analytics setup, domain/hosting configuration, and post-launch support. No hidden fees.</p></div></details>
+          <details class="faq-item"><summary>Can I pay in installments?<svg class="faq-chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg></summary><div class="faq-body"><p>Yes. We offer 50/50 payment: 50% upfront to start, 50% on delivery. For Scale plans, we offer 3-part payment.</p></div></details>
+          <details class="faq-item"><summary>What if I need changes after the project?<svg class="faq-chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg></summary><div class="faq-body"><p>30 days of free support is included. After that, our retainer plan at ₹50,000/month covers unlimited small updates and optimizations.</p></div></details>
+          <details class="faq-item"><summary>Do you charge for hosting?<svg class="faq-chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg></summary><div class="faq-body"><p>No. We set up your site on Vercel or Netlify (free tier covers most startups). Domain registration is a separate ~₹1,000/year cost.</p></div></details>
+          <details class="faq-item"><summary>How does the money-back guarantee work?<svg class="faq-chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg></summary><div class="faq-body"><p>After the Discovery phase (Day 1–3), if you're not satisfied with the wireframes and direction, request a full refund. We process it within 5 business days.</p></div></details>
+          <details class="faq-item"><summary>Can I upgrade my plan later?<svg class="faq-chevron" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg></summary><div class="faq-body"><p>Yes! Many clients start with Starter and upgrade to Growth when they close their seed round. We offer a loyalty discount for returning clients.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer"><div class="container"><div class="footer-editorial"><p class="eyebrow">We Design What Converts — Est. 2024</p><h2 class="footer-headline">BUILT FOR<br>FOUNDERS<br>WHO SHIP.</h2></div><div class="footer-nav-grid"><div class="footer-nav-col"><h4>Pages</h4><a href="services.html">Services</a><a href="work.html">Work</a><a href="process.html">Process</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a href="blog.html">Blog</a></div><div class="footer-nav-col"><h4>Services</h4><a href="services.html">Brand Sprint</a><a href="services.html">Redesign</a><a href="services.html">Design Systems</a><a href="services.html">Framer Sites</a><a href="services.html">SEO</a></div><div class="footer-nav-col"><h4>Company</h4><a href="about.html">About Us</a><a href="#">Careers</a><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Sitemap</a></div><div class="footer-nav-col"><h4>Connect</h4><a href="mailto:hello@pixelpulse.co">hello@pixelpulse.co</a><div style="display:flex;gap:8px;margin-top:8px;"><a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg></a><a href="#" class="social-icon" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l6.5 8L4 20h2l5.5-6.5L16 20h4l-7-8.5L19.5 4H18l-5 5.5L9 4z"/></svg></a><a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div></div></div><div class="footer-bottom"><svg class="footer-bottom-logo" width="20" height="20" viewBox="0 0 48 48" fill="none"><path d="M24 4L44 24L24 44L4 24L24 4Z" stroke="var(--text-faint)" stroke-width="1.5" fill="none"/></svg><span>© 2026 PixelPulse · Jammu, India</span><span>Made with AI · Shipped with care</span></div></div></footer>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/gsap-init.js" defer></script>
+  <script src="./js/accordion.js" defer></script>
+</body>
+</html>
