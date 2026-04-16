@@ -101,10 +101,10 @@
 }
 .calendar-cell.phase-1 { border-color: var(--surface-3); }
 .calendar-cell.phase-2 { border-color: var(--accent-dim); background: var(--accent-dim); }
-.calendar-cell.phase-3 { border-color: rgba(200,169,110,0.2); background: rgba(200,169,110,0.15); }
+.calendar-cell.phase-3 { border-color: rgba(107,140,255,0.2); background: rgba(107,140,255,0.15); }
 .calendar-cell.phase-4 { border-color: var(--accent); background: var(--accent); }
 .calendar-cell.phase-4 .calendar-day { color: var(--bg); }
-.calendar-cell.phase-4 .calendar-label { color: rgba(13,13,13,0.6); }
+.calendar-cell.phase-4 .calendar-label { color: rgba(10,14,26,0.6); }
 
 /* What You Get */
 .deliverables-full-grid {
