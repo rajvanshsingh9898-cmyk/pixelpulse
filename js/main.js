@@ -15,8 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
       preloader.classList.add('fade-out');
       const main = document.getElementById('main-content');
       if (main) main.style.opacity = '1';
-      setTimeout(() => { preloader.style.display = 'none'; }, 600);
-    }, 1800);
+      setTimeout(() => { preloader.style.display = 'none'; }, 400);
+    }, 600);
+  }
+
+  /* ── LAZY LOAD HERO VIDEO ── */
+  const heroVideo = document.querySelector('.hero-video');
+  if (heroVideo && heroVideo.preload === 'none') {
+    heroVideo.preload = 'auto';
+    heroVideo.load();
   }
 
   /* ── FLOATING NAV ── */
