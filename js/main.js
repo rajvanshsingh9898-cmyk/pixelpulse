@@ -19,10 +19,57 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 600);
   }
 
-  /* ── LAZY LOAD HERO VIDEO ── */
-  const heroVideo = document.querySelector('.hero-video');
-  if (heroVideo) {
-    heroVideo.play().catch(() => {});
+  /* ── HERO FRAME SCROLL ANIMATION ── */
+  const heroCanvas = document.getElementById('hero-canvas');
+  if (heroCanvas) {
+    const ctx = heroCanvas.getContext('2d');
+    const frameCount = 200;
+    const frames = [];
+    let loadedCount = 0;
+    let currentFrame = 0;
+
+    for (let i = 1; i <= frameCount; i++) {
+      const img = new Image();
+      img.src = `./assets/frames/ezgif-frame-${String(i).padStart(3, '0')}.jpg`;
+      img.onload = () => { loadedCount++; if (i === 1) drawFrame(0); };
+      frames.push(img);
+    }
+
+    function drawFrame(index) {
+      const img = frames[index];
+      if (!img || !img.complete || !img.naturalWidth) return;
+      const cw = heroCanvas.width, ch = heroCanvas.height;
+      const scale = Math.max(cw / img.naturalWidth, ch / img.naturalHeight);
+      const w = img.naturalWidth * scale, h = img.naturalHeight * scale;
+      ctx.clearRect(0, 0, cw, ch);
+      ctx.drawImage(img, (cw - w) / 2, (ch - h) / 2, w, h);
+    }
+
+    function resizeCanvas() {
+      const dpr = window.devicePixelRatio > 1 ? 1.5 : 1;
+      heroCanvas.width = heroCanvas.offsetWidth * dpr;
+      heroCanvas.height = heroCanvas.offsetHeight * dpr;
+      drawFrame(currentFrame);
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    const heroOuter = document.querySelector('.hero-outer');
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          if (heroOuter) {
+            const rect = heroOuter.getBoundingClientRect();
+            const progress = Math.max(0, Math.min(1, -rect.top / (heroOuter.offsetHeight - window.innerHeight)));
+            const index = Math.min(frameCount - 1, Math.floor(progress * frameCount));
+            if (index !== currentFrame) { currentFrame = index; drawFrame(currentFrame); }
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
   }
 
   /* ── FLOATING NAV ── */
