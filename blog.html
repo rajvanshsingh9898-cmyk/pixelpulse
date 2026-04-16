@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — PixelPulse</title>
+  <meta name="description" content="Insights on startup design, conversion optimization, and AI-powered workflows.">
+  <meta property="og:title" content="Blog — PixelPulse">
+  <meta property="og:description" content="Insights on startup design, conversion optimization, and AI-powered workflows.">
+  <meta property="og:image" content="./assets/og-preview.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PixelPulse">
+  <meta name="twitter:card" content="summary_large_image">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300..700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,400i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/tokens.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages/blog.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{instrument:['Instrument Serif','Georgia','serif'],dm:['DM Sans','Helvetica Neue','sans-serif'],satoshi:['Satoshi','Helvetica Neue','sans-serif']}}}}</script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <div class="grain-overlay" aria-hidden="true"><svg width="100%" height="100%"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg></div>
+
+  <div class="announce-bar" role="marquee" aria-label="Announcements"><div class="announce-track"><span class="announce-item"><svg viewBox="0 0 16 16" fill="currentColor" style="color:var(--accent)"><path d="M6 12l-4-4 1.4-1.4L6 9.2l6.6-6.6L14 4z"/></svg>FREE DISCOVERY CALL — NO COMMITMENT</span><span class="announce-dot"></span><span class="announce-item">2-WEEK DESIGN SPRINT · LAUNCH-READY</span><span class="announce-dot"></span><span class="announce-item">USED BY 40+ SEED & SERIES-A STARTUPS</span><span class="announce-dot"></span><span class="announce-item">AI-ACCELERATED · HUMAN-CRAFTED</span><span class="announce-dot"></span><span class="announce-item"><svg viewBox="0 0 16 16" fill="currentColor" style="color:var(--accent)"><path d="M6 12l-4-4 1.4-1.4L6 9.2l6.6-6.6L14 4z"/></svg>FREE DISCOVERY CALL — NO COMMITMENT</span><span class="announce-dot"></span><span class="announce-item">2-WEEK DESIGN SPRINT · LAUNCH-READY</span><span class="announce-dot"></span><span class="announce-item">USED BY 40+ SEED & SERIES-A STARTUPS</span><span class="announce-dot"></span><span class="announce-item">AI-ACCELERATED · HUMAN-CRAFTED</span><span class="announce-dot"></span></div></div>
+
+  <nav class="floating-nav" aria-label="Main navigation"><div class="nav-inner"><a href="index.html" class="nav-brand" aria-label="PixelPulse Home"><span class="nav-logo"><svg width="28" height="28" viewBox="0 0 48 48" fill="none"><path d="M24 4L44 24L24 44L4 24L24 4Z" stroke="var(--accent)" stroke-width="1.5" fill="none"/><text x="24" y="28" text-anchor="middle" fill="var(--accent)" font-family="Satoshi" font-size="14" font-weight="700">P</text></svg></span><span class="nav-wordmark">PixelPulse</span></a><div class="nav-links"><a href="services.html" class="nav-link">Services</a><a href="work.html" class="nav-link">Work</a><a href="process.html" class="nav-link">Process</a><a href="pricing.html" class="nav-link">Pricing</a><a href="about.html" class="nav-link">About</a><a href="blog.html" class="nav-link">Blog</a></div><div class="nav-cta"><a href="contact.html" class="btn-pill btn-accent" style="padding:10px 24px;font-size:11px;">Book a Call</a></div><button class="nav-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button></div></nav>
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay" aria-hidden="true"><a href="services.html" class="mobile-nav-link">Services</a><a href="work.html" class="mobile-nav-link">Work</a><a href="process.html" class="mobile-nav-link">Process</a><a href="pricing.html" class="mobile-nav-link">Pricing</a><a href="about.html" class="mobile-nav-link">About</a><a href="blog.html" class="mobile-nav-link">Blog</a><div class="mobile-nav-bottom"><a href="contact.html" class="btn-pill btn-accent">Book a Call</a></div></div>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="section-pad container" style="padding-top:140px;">
+      <p class="eyebrow">Blog</p>
+      <h1 style="font-family:'Instrument Serif',Georgia,serif;font-size:var(--text-3xl);color:var(--text);" class="fade-up">Insights for founders who ship</h1>
+      <div class="blog-filters" style="margin-top:var(--space-6);display:flex;gap:8px;flex-wrap:wrap;">
+        <button class="filter-tab active" data-category="all">All</button>
+        <button class="filter-tab" data-category="design">Design</button>
+        <button class="filter-tab" data-category="conversion">Conversion</button>
+        <button class="filter-tab" data-category="startup">Startup</button>
+        <button class="filter-tab" data-category="ai">AI</button>
+      </div>
+    </section>
+
+    <!-- FEATURED POST -->
+    <section class="section-pad" style="background:var(--surface);" aria-label="Featured post">
+      <div class="container">
+        <div class="featured-post fade-up">
+          <div class="featured-post-image">
+            <img src="./assets/hero-bg.png" alt="Featured blog post" width="800" height="480" loading="lazy" decoding="async">
+          </div>
+          <div class="featured-post-body">
+            <span class="blog-category">Design</span>
+            <h2 class="featured-post-title"><a href="blog-post.html">Why your startup's website is losing you customers (and how to fix it in 14 days)</a></h2>
+            <p class="featured-post-excerpt">Most startup websites are built for founders, not customers. Here's the framework we use to redesign sites that actually convert.</p>
+            <div class="blog-meta"><span>Arjun Mehta</span><span>·</span><span>Jan 15, 2026</span><span>·</span><span>8 min read</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG GRID -->
+    <section class="section-pad" style="background:var(--bg);" aria-label="Articles">
+      <div class="container">
+        <div class="blog-grid fade-up-stagger">
+          <article class="blog-card" data-category="conversion">
+            <div class="blog-card-image"><img src="./assets/feature-card.png" alt="Blog post" width="600" height="360" loading="lazy" decoding="async"></div>
+            <div class="blog-card-body">
+              <span class="blog-category">Conversion</span>
+              <h3 class="blog-card-title"><a href="blog-post.html">The 5 conversion killers we see on every startup homepage</a></h3>
+              <div class="blog-meta"><span>Jan 10, 2026</span><span>·</span><span>6 min</span></div>
+            </div>
+          </article>
+          <article class="blog-card" data-category="ai">
+            <div class="blog-card-image"><img src="./assets/social-proof.png" alt="Blog post" width="600" height="360" loading="lazy" decoding="async"></div>
+            <div class="blog-card-body">
+              <span class="blog-category">AI</span>
+              <h3 class="blog-card-title"><a href="blog-post.html">How we use AI to design 3× faster (without sacrificing quality)</a></h3>
+              <div class="blog-meta"><span>Jan 5, 2026</span><span>·</span><span>7 min</span></div>
+            </div>
+          </article>
+          <article class="blog-card" data-category="startup">
+            <div class="blog-card-image"><img src="./assets/process-section.png" alt="Blog post" width="600" height="360" loading="lazy" decoding="async"></div>
+            <div class="blog-card-body">
+              <span class="blog-category">Startup</span>
+              <h3 class="blog-card-title"><a href="blog-post.html">Before your Series A: the website checklist investors actually notice</a></h3>
+              <div class="blog-meta"><span>Dec 28, 2025</span><span>·</span><span>5 min</span></div>
+            </div>
+          </article>
+          <article class="blog-card" data-category="design">
+            <div class="blog-card-image"><img src="./assets/casestudy-mockup.png" alt="Blog post" width="600" height="360" loading="lazy" decoding="async"></div>
+            <div class="blog-card-body">
+              <span class="blog-category">Design</span>
+              <h3 class="blog-card-title"><a href="blog-post.html">Dark mode done right: a guide for SaaS landing pages</a></h3>
+              <div class="blog-meta"><span>Dec 20, 2025</span><span>·</span><span>4 min</span></div>
+            </div>
+          </article>
+          <article class="blog-card" data-category="conversion">
+            <div class="blog-card-image"><img src="./assets/fullbleed-section.png" alt="Blog post" width="600" height="360" loading="lazy" decoding="async"></div>
+            <div class="blog-card-body">
+              <span class="blog-category">Conversion</span>
+              <h3 class="blog-card-title"><a href="blog-post.html">A/B testing your hero section: what we learned from 40 startups</a></h3>
+              <div class="blog-meta"><span>Dec 14, 2025</span><span>·</span><span>9 min</span></div>
+            </div>
+          </article>
+          <article class="blog-card" data-category="design">
+            <div class="blog-card-image"><img src="./assets/agency-identity.png" alt="Blog post" width="600" height="360" loading="lazy" decoding="async"></div>
+            <div class="blog-card-body">
+              <span class="blog-category">Design</span>
+              <h3 class="blog-card-title"><a href="blog-post.html">The design system playbook for early-stage startups</a></h3>
+              <div class="blog-meta"><span>Dec 8, 2025</span><span>·</span><span>6 min</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="section-pad" style="background:var(--surface);" aria-label="Newsletter">
+      <div class="container">
+        <div class="newsletter-section fade-up" style="max-width:560px;margin:0 auto;text-align:center;">
+          <p class="eyebrow">Newsletter</p>
+          <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:var(--text-xl);color:var(--text);margin-top:var(--space-4);">Design insights, weekly</h2>
+          <p style="font-family:'Satoshi',sans-serif;font-size:15px;color:var(--text-muted);margin-top:var(--space-2);line-height:1.7;">One email a week. Startup design tips, case studies, and behind-the-scenes of our sprint process. No spam.</p>
+          <form id="newsletter-form" class="newsletter-form" style="margin-top:var(--space-6);display:flex;gap:8px;">
+            <input type="email" placeholder="you@startup.com" required class="form-input" style="flex:1;background:var(--bg);border:1px solid var(--border);color:var(--text);">
+            <button type="submit" class="btn-pill btn-accent">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer"><div class="container"><div class="footer-editorial"><p class="eyebrow">We Design What Converts — Est. 2024</p><h2 class="footer-headline">BUILT FOR<br>FOUNDERS<br>WHO SHIP.</h2></div><div class="footer-nav-grid"><div class="footer-nav-col"><h4>Pages</h4><a href="services.html">Services</a><a href="work.html">Work</a><a href="process.html">Process</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a href="blog.html">Blog</a></div><div class="footer-nav-col"><h4>Services</h4><a href="services.html">Brand Sprint</a><a href="services.html">Redesign</a><a href="services.html">Design Systems</a><a href="services.html">Framer Sites</a><a href="services.html">SEO</a></div><div class="footer-nav-col"><h4>Company</h4><a href="about.html">About Us</a><a href="#">Careers</a><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Sitemap</a></div><div class="footer-nav-col"><h4>Connect</h4><a href="mailto:hello@pixelpulse.co">hello@pixelpulse.co</a><div style="display:flex;gap:8px;margin-top:8px;"><a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg></a><a href="#" class="social-icon" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l6.5 8L4 20h2l5.5-6.5L16 20h4l-7-8.5L19.5 4H18l-5 5.5L9 4z"/></svg></a><a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div></div></div><div class="footer-bottom"><svg class="footer-bottom-logo" width="20" height="20" viewBox="0 0 48 48" fill="none"><path d="M24 4L44 24L24 44L4 24L24 4Z" stroke="var(--text-faint)" stroke-width="1.5" fill="none"/></svg><span>© 2026 PixelPulse · Jammu, India</span><span>Made with AI · Shipped with care</span></div></div></footer>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/gsap-init.js" defer></script>
+</body>
+</html>
