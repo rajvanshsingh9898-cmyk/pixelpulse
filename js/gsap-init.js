@@ -11,41 +11,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── NAV VISIBILITY ── */
   const nav = document.querySelector('.floating-nav');
-  const heroOuter = document.querySelector('.hero-outer');
-  if (nav && heroOuter) {
-    ScrollTrigger.create({
-      trigger: heroOuter,
-      start: 'top top',
-      end: 'bottom top',
-      onUpdate: (self) => {
-        if (self.progress > 0.2) {
-          nav.classList.add('visible');
-        }
-      }
-    });
-  }
+  // Nav show/hide handled by main.js scroll listener
 
   /* ── HERO TEXT REVEAL ── */
   const heroLines = document.querySelectorAll('.hero-line');
-  if (heroLines.length && typeof SplitText !== 'undefined') {
-    heroLines.forEach(line => {
-      const split = new SplitText(line, { type: 'chars' });
-      gsap.from(split.chars, {
-        opacity: 0,
-        y: 60,
-        rotateX: -40,
-        stagger: 0.015,
-        duration: 1,
-        ease: 'power4.out',
-        scrollTrigger: {
-          trigger: heroOuter || line,
-          start: 'top top',
-          end: '30% bottom',
-          toggleActions: 'play none none none'
-        }
-      });
+  heroLines.forEach((line, i) => {
+    gsap.from(line, {
+      opacity: 0,
+      y: 40,
+      duration: 0.8,
+      delay: 0.7 + i * 0.12,
+      ease: 'power3.out'
     });
-  }
+  });
+
+  /* ── HERO PILL + SUBLINE + CTAS + STATS ── */
+  gsap.from('.hero-pill-label', { opacity: 0, y: 20, duration: 0.6, delay: 0.5, ease: 'power3.out' });
+  gsap.from('.hero-subline', { opacity: 0, y: 20, duration: 0.6, delay: 1.1, ease: 'power3.out' });
+  gsap.from('.hero-ctas', { opacity: 0, y: 20, duration: 0.6, delay: 1.25, ease: 'power3.out' });
+  gsap.from('.hero-stats', { opacity: 0, y: 20, duration: 0.6, delay: 1.4, ease: 'power3.out' });
 
   /* ── HERO BENTO CARDS ── */
   gsap.utils.toArray('.bento-card').forEach((card, i) => {
@@ -53,14 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
       opacity: 0,
       scale: 0.92,
       y: 24,
-      delay: i * 0.12,
+      delay: 0.6 + i * 0.12,
       duration: 0.8,
-      ease: 'power3.out',
-      scrollTrigger: {
-        trigger: '.hero-inner',
-        start: '20% top',
-        toggleActions: 'play none none none'
-      }
+      ease: 'power3.out'
     });
   });
 
