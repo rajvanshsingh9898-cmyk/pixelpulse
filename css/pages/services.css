@@ -52,7 +52,7 @@
   align-items: center;
   gap: 6px;
   background: var(--accent-dim);
-  border: 1px solid rgba(200,169,110,0.2);
+  border: 1px solid rgba(107,140,255,0.2);
   border-radius: var(--radius-full);
   padding: 6px 14px;
   font-family: 'Satoshi', sans-serif;
