@@ -399,7 +399,7 @@
   width: 0;
   height: 1.5px;
   background: var(--accent);
-  transition: width 900ms var(--ease-out);
+  transition: width 500ms var(--ease-out);
 }
 .preloader-bar.loading {
   width: 240px;
