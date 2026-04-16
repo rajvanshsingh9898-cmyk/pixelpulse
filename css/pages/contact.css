@@ -1,0 +1,183 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   CONTACT.CSS
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 5vw, 80px);
+  align-items: start;
+}
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+.contact-form-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-label {
+  display: block;
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 15px;
+  color: var(--text);
+  transition: border-color 180ms var(--ease-spring);
+  outline: none;
+}
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: var(--accent);
+}
+.form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%237a7876' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 6l3.5 4 3.5-4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+}
+.form-select option {
+  background: var(--surface-2);
+  color: var(--text);
+}
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.form-error {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 12px;
+  color: var(--error);
+  margin-top: 4px;
+  display: none;
+}
+.form-error.visible { display: block; }
+.form-fine-print {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 11px;
+  color: var(--text-faint);
+  margin-top: 12px;
+  text-align: center;
+}
+
+/* Success State */
+#contact-success {
+  display: none;
+  text-align: center;
+  padding: 60px 20px;
+}
+#contact-success.visible { display: block; }
+.success-check {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-6);
+}
+.success-check circle {
+  stroke: #4ade80;
+  fill: none;
+  stroke-width: 2;
+}
+.success-check path {
+  stroke: #4ade80;
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 24;
+  stroke-dashoffset: 24;
+  animation: check-draw 600ms 200ms forwards var(--ease-spring);
+}
+@keyframes check-draw {
+  to { stroke-dashoffset: 0; }
+}
+.success-title {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: var(--text-xl);
+  color: var(--text);
+}
+.success-body {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 16px;
+  color: var(--text-muted);
+  margin-top: var(--space-4);
+}
+
+/* Info Block */
+.contact-info { padding-top: 20px; }
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: 10px 18px;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 13px;
+  color: var(--text);
+  margin-bottom: var(--space-8);
+}
+.info-item {
+  margin-bottom: var(--space-6);
+}
+.info-label {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+.info-value {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 16px;
+  color: var(--text);
+}
+.info-value a {
+  transition: color 200ms;
+}
+.info-value a:hover { color: var(--accent); }
+.contact-social-row {
+  display: flex;
+  gap: 12px;
+  margin-top: var(--space-6);
+}
+.calendly-placeholder {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  text-align: center;
+  margin-top: 32px;
+}
+.calendly-placeholder p {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+.calendly-placeholder .note {
+  font-size: 11px;
+  color: var(--text-faint);
+  margin-top: 12px;
+}
