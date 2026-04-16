@@ -3,20 +3,20 @@
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
 :root {
-  /* Colors */
-  --bg:              #0d0d0d;
-  --surface:         #141414;
-  --surface-2:       #1a1a1a;
-  --surface-3:       #222222;
-  --border:          rgba(255,255,255,0.07);
-  --border-strong:   rgba(255,255,255,0.14);
-  --text:            #e8e6e0;
-  --text-muted:      #7a7876;
-  --text-faint:      #3d3c3a;
-  --accent:          #c8a96e;
-  --accent-hover:    #b89455;
-  --accent-dim:      rgba(200,169,110,0.12);
-  --accent-glow:     rgba(200,169,110,0.08);
+  /* Colors — Premium Navy Blue */
+  --bg:              #0a0e1a;
+  --surface:         #0f1628;
+  --surface-2:       #151d35;
+  --surface-3:       #1c2541;
+  --border:          rgba(148,180,255,0.08);
+  --border-strong:   rgba(148,180,255,0.16);
+  --text:            #e4e8f1;
+  --text-muted:      #7b87a8;
+  --text-faint:      #2e3a56;
+  --accent:          #6b8cff;
+  --accent-hover:    #5474e8;
+  --accent-dim:      rgba(107,140,255,0.12);
+  --accent-glow:     rgba(107,140,255,0.08);
   --error:           #ef4444;
 
   /* Easing */
